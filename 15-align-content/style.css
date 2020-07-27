@@ -1,0 +1,32 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  display: grid;
+  height: 100vh;
+  gap: 5px;
+  grid-template-columns: repeat(3, 200px);
+  grid-template-rows: repeat(4, 100px);
+
+  /* start end center stretch */
+  /* stretch estira al máximo de la columna o fila */
+  /* justify-items: center;
+  align-items: center; */
+
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+.item {
+  background-color: lightblue;
+  padding: 10px;
+  border: 1px solid red;
+  /* margin: 0 10px 10px 0; */
+}
+
+.item:nth-of-type(5){
+  /* align-self: start;
+  justify-self: start; */
+}
+
